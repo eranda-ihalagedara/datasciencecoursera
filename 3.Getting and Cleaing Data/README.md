@@ -1,7 +1,7 @@
 # Peer-graded Assignment
 
 
-Please refer to the **run_analysis.R** [here] for the related script that cleaned and transformed the data.\
+Please refer to the **run_analysis.R** [here](https://github.com/eranda-ihalagedara/datasciencecoursera/blob/master/3.Getting%20and%20Cleaing%20Data/analysis_run.R) for the related script that cleaned and transformed the data.\
 You can find the **codebook** for the dataset [here]\
 Further, the tidy dataset in both .csv and .txt formats [here]\
 
