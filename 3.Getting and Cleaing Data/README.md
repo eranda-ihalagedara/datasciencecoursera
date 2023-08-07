@@ -1,11 +1,9 @@
 # Peer-graded Assignment
 
 
-Please refer to the **run_analysis.R** [here] for the related script that cleaned and transformed the data.
-
-You can find the **codebook** for the dataset [here]
-
-Further, the tidy dataset in both .csv and .txt formats [here]
+Please refer to the **run_analysis.R** [here] for the related script that cleaned and transformed the data.\
+You can find the **codebook** for the dataset [here]\
+Further, the tidy dataset in both .csv and .txt formats [here]\
 
 Data cleaning were done using [Tidyverse](https://www.tidyverse.org/) packages.
 Feature names were loaded and extracted the feature names of means and standard deviations. Then training and test sets were loaded, selected only the requied columns and renamed the columns.
