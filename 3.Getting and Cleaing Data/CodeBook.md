@@ -17,8 +17,6 @@ The gravitational force is assumed to have only low frequency components, theref
 From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 ####For each record it is provided:
-======================================
-
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
 - A 561-feature vector with time and frequency domain variables. 
