@@ -54,3 +54,7 @@ data_set_averaged = data_set %>%
   summarise_all(mean)
 
 
+# Write the cleaned and summarized dataset
+write_delim(data_set_averaged, "tidy_data_set.txt", col_names = TRUE)
+write_csv(data_set_averaged, "tidy_data_set.csv", col_names = TRUE)
+
