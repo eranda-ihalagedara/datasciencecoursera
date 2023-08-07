@@ -3,7 +3,7 @@
 
 Please refer to the **run_analysis.R** [here](https://github.com/eranda-ihalagedara/datasciencecoursera/blob/master/3.Getting%20and%20Cleaing%20Data/analysis_run.R) for the related script that cleaned and transformed the data.\
 You can find the **codebook** for the dataset [here](https://github.com/eranda-ihalagedara/datasciencecoursera/blob/master/3.Getting%20and%20Cleaing%20Data/CodeBook.md)\
-Further, the tidy dataset in both .csv and .txt formats [here](https://github.com/eranda-ihalagedara/datasciencecoursera/tree/master/3.Getting%20and%20Cleaing%20Data/Tidy%20Data)
+Further, the **tidy dataset** in both .csv and .txt formats [here](https://github.com/eranda-ihalagedara/datasciencecoursera/tree/master/3.Getting%20and%20Cleaing%20Data/Tidy%20Data)
 
 Data cleaning were done using [Tidyverse](https://www.tidyverse.org/) packages.
 Feature names were loaded and extracted the feature names of means and standard deviations. Then training and test sets were loaded, selected only the requied columns and renamed the columns.
