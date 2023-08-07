@@ -2,7 +2,7 @@
 
 ### Dataset
 The dataset used in the project can be found here:
-(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)\
+(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).\
 This is taken from the original dataset of "Human Activity Recognition Using Smartphones Dataset" that can be found at [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones) along with feature desciptions.
 
 ### Background
