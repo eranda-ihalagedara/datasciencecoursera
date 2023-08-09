@@ -2,6 +2,10 @@
 
 Please refer to the plots 1-4 and realated R codes in the same [folder](https://github.com/eranda-ihalagedara/datasciencecoursera/edit/master/4.Exploratory%20Data%20Analysis/Course%20Project%201/) as this README.
 
+Plot1
+![Plot1](plot1.png)
+
+
 ### Dataset Source
 
 The dataset used in the project can be found here: [Electric Power consumption](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip)
