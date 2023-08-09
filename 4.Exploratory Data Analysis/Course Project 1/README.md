@@ -1,10 +1,17 @@
 ## EDA of Electric Power consumption - Course Project 1
 
+### Summary
 Please refer to the plots 1-4 and realated R codes in the same [folder](https://github.com/eranda-ihalagedara/datasciencecoursera/edit/master/4.Exploratory%20Data%20Analysis/Course%20Project%201/) as this README.
 
 Plot1
-![Plot1](plot1.png)
+<img src="plot1.png"  width="600" height="300">
 
+Plot2
+![Plot1](plot1.png)
+Plot3
+![Plot1](plot1.png)
+Plot4
+![Plot1](plot1.png)
 
 ### Dataset Source
 
