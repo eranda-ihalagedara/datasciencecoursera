@@ -25,16 +25,20 @@ Measurements of electric power consumption in one household with a one-minute sa
 9. sub_metering_3: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.
 
 
-Plot1/
+Plot1<br>
+
 <img src="plot1.png"  width="200" height="200">
 
-Plot2/
+Plot2<br>
+
 <img src="plot2.png"  width="200" height="200">
 
-Plot3/
+Plot3<br>
+
 <img src="plot3.png"  width="200" height="200">
 
-Plot4/
+Plot4<br>
+
 <img src="plot4.png"  width="200" height="200">
 
 **Credit goes to original creators: Hebrail,Georges and Berard,Alice. (2012). Individual household electric power consumption. UCI Machine Learning Repository. https://doi.org/10.24432/C58K54.**
