@@ -5,7 +5,6 @@ library(readr)
 library(janitor)
 
 
-
 # Loading the dataset and clean column names
 power_data = read_delim("household_power_consumption.txt", delim=";", col_names = TRUE, na="?") %>% 
   clean_names()
