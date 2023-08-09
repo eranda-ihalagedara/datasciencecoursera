@@ -1,5 +1,6 @@
 ## EDA of Electric Power consumption - Course Project 1
 
+Please refer to the plots 1-4 and realated R codes in the same folder.
 
 ### Dataset Source
 
