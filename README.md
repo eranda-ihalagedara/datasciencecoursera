@@ -1,5 +1,7 @@
 # Data Science Specialization | Coursera
 
+This repository contains the course projects and assigments done for the Data Science Specialization by John Hopkins Universty hosted by Coursera
+
 | Course | Link |
 | ------ | ---- |
 | Getting and Cleaning Data | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/tree/master/3.Getting%20and%20Cleaing%20Data) |
