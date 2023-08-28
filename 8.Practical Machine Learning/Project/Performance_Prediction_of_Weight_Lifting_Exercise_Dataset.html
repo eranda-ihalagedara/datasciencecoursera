@@ -684,7 +684,7 @@ confusionMatrix(pred_test_comb, testing$classe)</code></pre>
 ## Detection Prevalence   0.2847   0.1942   0.1759   0.1614   0.1838
 ## Balanced Accuracy      0.9992   0.9979   0.9938   0.9904   0.9983</code></pre>
 <p>Our model performs 99.36% accuracy on the test set and hence our
-estimate of the out of sample error would be so. This is a great level
+estimate of the out of sample error would be 0.64%. This is a great level
 of performance.</p>
 <p>we can plot the confusion matrix:</p>
 <pre class="r"><code>as.data.frame(confusionMatrix(pred_test_comb, testing$classe)$table) %&gt;% 
