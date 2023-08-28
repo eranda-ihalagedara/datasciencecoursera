@@ -4,8 +4,8 @@ This contains the R markdown of analysis of `weight lifting dataset` along with 
 
 | File | Link |
 | -- | -- |
-| HTML | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/blob/master/5.Reproducible%20Research/Course%20Project1/PA1_template.html) |
+| HTML | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/blob/master/8.Practical%20Machine%20Learning/Project/Performance_Prediction_of_Weight_Lifting_Exercise_Dataset.html) |
 | R markdown | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/blob/master/8.Practical%20Machine%20Learning/Project/Performance_Prediction_of_Weight_Lifting_Exercise_Dataset.Rmd) |
-| Markdown | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/blob/master/5.Reproducible%20Research/Course%20Project1/PA1_template.md) |
+| Markdown | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/blob/master/8.Practical%20Machine%20Learning/Project/Performance_Prediction_of_Weight_Lifting_Exercise_Dataset.md) |
 
 
