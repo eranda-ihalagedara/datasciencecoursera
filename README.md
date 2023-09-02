@@ -7,4 +7,5 @@ This repository contains the course projects and assigments done for the Data Sc
 | Getting and Cleaning Data | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/tree/master/3.Getting%20and%20Cleaing%20Data) |
 | Exploratory Data Analysis | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/tree/master/4.Exploratory%20Data%20Analysis) |
 | Practical Machine Learning | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/tree/master/8.Practical%20Machine%20Learning) |
+| Developing Data Products | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/tree/master/9.Developing%20Data%20Products) |
 
