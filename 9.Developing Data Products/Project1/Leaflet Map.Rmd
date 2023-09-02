@@ -1,0 +1,48 @@
+---
+title: "Untitled"
+author: "Eranda Ihalagedara"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+---
+
+<style type="text/css">
+slides > slide:not(.nobackground):after {
+  content: '';
+}
+#us-crime-rates-1973 > p {
+      margin-top: -50px;
+      margin-bottom: 2px;
+    }
+
+</style>
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tibble)
+library(dplyr)
+data("USArrests")
+data("state")
+library(leaflet)
+dt = Sys.Date()
+```
+
+## US Crime Rates 1973
+<p style="font-size: 20px;">Last compiled on `r Sys.Date()`</p>
+<br><br>
+Visualisation of assault arrests(per 100,000) in R `USArrests` dataset.
+
+```{r}
+df1 = USArrests %>% rownames_to_column(var="state")
+usst = data.frame(state = state.name, lat=state.center$y, lng=state.center$x)
+df2 = df1 %>% left_join(usst,by="state")
+
+pal <- colorNumeric(c("#136cd1", "#a8000e"),
+  domain = df2$Assault)
+
+df2 %>% leaflet() %>% 
+  addTiles() %>% 
+  addCircleMarkers(lat=~lat, lng=~lng, radius = ~Assault/30, label = ~paste(state, Assault, sep=" : "), fillColor = ~pal(Assault), stroke = FALSE, fillOpacity = 0.9) %>% 
+  addLegend(pal = pal, values = ~Assault, opacity = 1)
+```
