@@ -1,0 +1,21 @@
+---
+title: "Plotly Presentation"
+author: "Eranda Ihalagedara"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+```
+
+## Visualisation of `mtcars` dataset
+
+```{r, echo=FALSE}
+mtcars %>% mutate(cyl=as.factor(cyl)) %>% plot_ly(x=~wt, y=~hp, z=~mpg, color = ~cyl,type="scatter3d", mode="markers") %>% 
+  layout(title="MPG vs Weight and Horsepower", legend = list(title=list(text='<b> No. of cylinders </b>')))
+```
+
