@@ -7,6 +7,6 @@ This contains the source data files of Shiny application and reproducible pitch 
 | File | Link |
 | -- | -- |
 | Shiny App | [link](https://eranda-i.shinyapps.io/NYC_Taxi_Data_Aanalysis/) |
-| App Source Code | [link]() |
-| Presentation | [link]() |
+| App Source Code | [link](https://github.com/eranda-ihalagedara/datasciencecoursera/tree/master/9.Developing%20Data%20Products/Course%20Project/app/NYC_Taxi_Data_Aanalysis) |
+| Reproducible Pitch | [link]() |
 
