@@ -1,0 +1,12 @@
+name: NYC_Taxi_Data_Aanalysis
+title: NYC_Taxi_Data_Aanalysis
+username: eranda-i
+account: eranda-i
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9804433
+bundleId: 7660635
+url: https://eranda-i.shinyapps.io/NYC_Taxi_Data_Aanalysis/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
