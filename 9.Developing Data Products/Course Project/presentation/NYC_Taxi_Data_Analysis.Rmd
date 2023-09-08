@@ -1,0 +1,100 @@
+---
+title: "NYC Taxi Data Analysis:Shiny App"
+author: "Eranda Ihalagedara"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r include==FALSE, message=FALSE, cache=TRUE}
+library(readr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(plotly)
+library(arrow)
+library(lubridate)
+library(viridis)
+
+zones = read_csv("taxi+_zone_lookup.csv") %>% select(LocationID, Borough, Zone)
+
+```
+
+<style type="text/css">
+#processing-data > p {
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+
+</style>
+
+## Executive Summary
+
+This is a brief of the NYC Taxi Data Analysis Application build using Shiny package in R. The application lets user to analyse taxi data on:
+
+- Trip Count
+- Trip Fare
+- Trip Distance
+- Trip Duration
+
+App and source file:
+
+1. [Shiny App](https://eranda-i.shinyapps.io/NYC_Taxi_Data_Aanalysis/)
+2. [Source Repository](https://github.com/eranda-ihalagedara/datasciencecoursera/tree/master/9.Developing%20Data%20Products/Course%20Project)
+
+## Processing Data
+The dataset contains outliers that needs to be removed. Following plot gives an idea of where outiers lie. Other dimensions also were explored to identify them.
+
+```{r processing, echo = TRUE, fig.height=3, cache=TRUE}
+taxi_trips = read_parquet("yellow_tripdata_2023-06.parquet")
+taxi_trips %>% filter(trip_distance>50) %>% 
+  ggplot(aes(x=trip_distance, y=fare_amount)) + geom_point(color="blue4")
+```
+
+```{r processing2, include=FALSE,message=FALSE, cache=TRUE}
+# Drop missing values, negative fares and negative duration
+taxi_trips = taxi_trips %>% 
+  drop_na() %>% 
+  filter(fare_amount>0) %>% 
+  mutate(duration = tpep_dropoff_datetime-tpep_pickup_datetime) %>% 
+  filter(duration>0)
+
+# Drop fares over 1000, distances over 1000
+taxi_trips = taxi_trips %>% filter((trip_distance<1000)&
+                               (fare_amount<1000)&
+                               (tip_amount<300)&
+                               (duration<86400)) %>% 
+  filter((trip_distance<100)|(fare_amount>100))
+
+# Day and hour
+days_ord = c("Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday")
+
+
+taxi_trips = taxi_trips %>% 
+  mutate(day=weekdays(tpep_pickup_datetime),hour=hour(tpep_pickup_datetime)) %>% 
+  mutate(day=factor(day, levels=days_ord))
+```
+
+## Insights
+Visualizing data can lead to different insights. Following heat map highlights the busy times of taxi rides. Through the Shiny app, we can see how the fare complements the busy hours.
+```{r insights, message=FALSE, cache=TRUE}
+taxi_trips %>% group_by(day, hour) %>% summarise(count = n()) %>% 
+  ggplot()+
+  geom_tile(aes(x=day, y=hour, fill=count))+
+  scale_fill_viridis(discrete=FALSE)
+
+```
+
+## References
+
+The data were obtained from the public datasets provided by NYC Taxi and Limousine Commission (TLC). Yellow Taxi Trip Records for the month of June 2023 was in this project which can be found here:
+[TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). 
